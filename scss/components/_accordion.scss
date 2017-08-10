@@ -1,0 +1,57 @@
+/* ==========================================================================
+   accordion
+   ========================================================================== */
+
+.ui-collapsible-heading-toggle {
+    border-top: 1px solid $c-border !important;
+    box-sizing: border-box !important;
+    padding: 11px 11px 11px 25px !important;
+    &:before {
+        transition: all .2s;
+    }
+    &.ui-icon-plus {
+        &::before {
+            content: '';
+            position: absolute;
+            right: 15px;
+            top: 22px;
+            transform: rotate(130deg);
+            height: 5px;
+            width: 5px;
+            border-top: 2px solid $c-border;
+            border-left: 2px solid $c-border;
+        }
+    }
+    &.ui-icon-minus {
+        &::before {
+            content: '';
+            position: absolute;
+            right: 15px;
+            top: 22px;
+            transform: rotate(225deg);
+            height: 5px;
+            width: 5px;
+            border-top: 2px solid $c-border;
+            border-left: 2px solid $c-border;
+        }
+    }
+}
+
+.ui-collapsible-content {
+    background-color: transparent !important;
+    padding: 0 !important;
+    border-top: 1px solid $c-border !important;
+    > table {
+        width: 100%;
+        tr {
+            height: 49px;
+            &:not(:last-child) {
+                border-bottom: 1px solid $c-border;
+            }
+            > td {
+                width: 33.333%;
+                text-align: center;
+            }
+        }
+    }
+}

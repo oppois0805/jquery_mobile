@@ -1,0 +1,37 @@
+extends templates/_layout.pug
+
+block main
+	div#menu(data-role="page",style="position: relative")
+		div.header(data-role="header")
+			a.bt.bt-Prev(href="../parkmanagement.html",data-transition="slide" data-direction="reverse")
+			h1 衡道堂
+		div.ui-content.ui-content--list(data-role="main")
+			.error
+				span 異常內容提醒
+			#errorMessage.errorMessage.errorMessage--hide
+				.errorMessage_title 
+					| 異常設備
+				.errorMessage_content
+					table.errorMessage_content_list
+						tr 
+							td 
+								div.pointer
+							td 國際展覽館  空調A  控制異常  5分鐘前
+						tr 
+							td 
+								div.pointer
+							td 國際展覽館  空調A  控制異常  5分鐘前
+						tr 
+							td 
+								div.pointer
+							td 國際展覽館  空調A  控制異常  5分鐘前
+			a.bt.bt-list.bt-list--ac(href="../message.html",data-transition="slide")
+				span 空調系統
+			a.bt.bt-list.bt-list--light(href="../message.html",data-transition="slide")
+				span 照明系統
+			a.bt.bt-list.bt-list--electricity(href="../message.html",data-transition="slide")
+				span 電力系統
+			a.bt.bt-list.bt-list--environment(href="../message.html",data-transition="slide")
+				span 環境監測系統
+			a.bt.bt-list.bt-list--security(href="../message.html",data-transition="slide")
+				span 影像安防系統

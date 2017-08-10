@@ -1,0 +1,19 @@
+/* ==========================================================================
+   accordion
+   ========================================================================== */
+
+.i_switch {
+    position: absolute;
+    right: 15px;
+    height: 48px;
+    width: 68px;
+    margin-top: -10px;
+    background-size: 68px 48px;
+    background-image: url(../images/switch_off.png);
+    background-repeat: no-repeat;
+    background-position: 0px 6px;
+    &.active {
+		background-image: url(../images/switch_on.png);
+		background-position: 7px 6px;
+    }
+}

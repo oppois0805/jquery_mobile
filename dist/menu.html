@@ -1,0 +1,31 @@
+<!DOCTYPE html >
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="css/jquery.mobile.custom.structure.min.css"/>
+    <link rel="stylesheet" href="css/jquery.mobile.custom.theme.min.css"/>
+    <link rel="stylesheet" href="css/application.css"/>
+    <link rel="stylesheet" href="css/opentip.css"/>
+  </head>
+  <body>
+    <div id="menu" data-role="page" style="position: relative;">
+      <div class="header" data-role="header"><a class="bt bt-Prev" href="../login.html" data-transition="pop"></a>
+        <h1></h1>
+      </div>
+      <div class="ui-content ui-content--menu" data-role="main">
+        <div class="menu">
+          <div class="menu_block"><a href="../parkmanagement.html" data-transition="pop">
+              <div class="bt bt-menu"><span>租借管理</span></div></a><a href="../parkmanagement.html" data-transition="pop">
+              <div class="bt bt-menu"><span>園區管理</span></div></a></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/all.min.js"></script>
+    <script>
+      $(document).on("pagebeforeshow","#pagetwo",function(){
+        alert("pagebeforeshow event fired - pagetwo is about to be shown");
+      });
+    </script>
+  </body>
+</html>

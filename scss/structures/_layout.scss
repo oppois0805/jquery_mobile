@@ -1,0 +1,64 @@
+/* ==========================================================================
+   layout
+   ========================================================================== */
+
+$font-stack: Helvetica,
+sans-serif;
+$primary-color: #aaa;
+body {
+    font: 100% $font-stack;
+    color: $primary-color;
+}
+
+.header {
+    z-index: 100;
+    height: 47px;
+    font-size: 23px;
+    color: $white !important;
+    background-color: $c-background-header !important;
+    h1 {
+        padding: 0.3em 0 !important;
+    }
+}
+
+.ui-header {
+    border: transparent !important;
+}
+
+.ui-collapsible {
+    margin: 0;
+}
+
+.ui-content {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0 !important;
+    position: absolute;
+    background-color: $gray;
+}
+
+.ui-btn {
+    &:active {
+        color: #333;
+    }
+}
+
+.ui-collapsible {
+    &:last-child {
+        border-bottom: 1px solid $c-border;
+    }
+}
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+.ui-content--login,
+.ui-content--menu {
+    background-color: $c-background-content !important;
+}
+
+.ui-content--list {
+    padding-top: 47px !important;
+}

@@ -1,0 +1,22 @@
+/* ==========================================================================
+   input
+   ========================================================================== */
+
+
+//overwrite jquery mobile css
+.ui-input-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px 0 5px 0;
+	height: 50px;
+	width: 100%;
+	max-width: 307px;
+	border: none;
+	border-radius: 3px;
+	background-color: $c-white-30 !important;
+	color: white !important;
+	input::placeholder {
+		color: rgba(255,255,255,.7);
+	}
+}

@@ -1,0 +1,34 @@
+/* ==========================================================================
+   login
+   ========================================================================== */
+
+.login {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.login_block {
+    width: 100%;
+    height: 48%;
+}
+
+.login_block_title {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    > span {
+        color: white;
+        font-size: 23px;
+    }
+}
+
+.login_block_inputs {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
